@@ -11,7 +11,7 @@ import Token
 
 struct TestMiddlewareNil: Middleware {
     
-    func execute(store: Store, action: Action, state: State?) -> (Store, Action, State?)? {
+    func execute(store: Store, action: Action, state: State?) -> MiddlewareResult? {
         return nil
     }
     
