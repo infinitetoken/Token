@@ -8,6 +8,9 @@
 
 import Foundation
 
+
+public typealias MiddlewareResult = (store: Store, action: Action, state: State?)
+
 public protocol Middleware {
-    func execute(store: Store, action: Action, state: State?) -> (store: Store, action: Action, state: State?)?
+    func execute(store: Store, action: Action, state: State?) -> MiddlewareResult?
 }

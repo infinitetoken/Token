@@ -41,7 +41,7 @@ public struct Token: Store {
     mutating public func dispatch(action: Action) {        
         if self.middleware.count > 0 {
             let initial: (Store, Action, State?) = (self, action, self.state)
-            if let result = self.middleware.reduce(initial, { (result, middleware) -> (store: Store, action: Action, state: State?)? in
+            if let result = self.middleware.reduce(initial, { (result, middleware) -> MiddlewareResult? in
                 guard let result = result else { return nil }
                 
                 return middleware.execute(store: result.store, action: result.action, state: result.state)
