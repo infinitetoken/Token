@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol Subscriber {
-    func onChange(newState: State) -> Void
+    func onChange(newState: State?) -> Void
 }

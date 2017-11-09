@@ -10,13 +10,16 @@ import Foundation
 
 public protocol Store {
     
-    var state: State! { get }
-    var dispatchFunction: DispatchFunction! { get }
+    var reducer: Reducer { get }
+    var state: State? { get }
+    var middleware: [Middleware] { get }
+    var subscribers: [Subscriber] { get set }
     
-    func subscribe<S: Subscriber>(_ subscriber: S) -> Void
-    func subscribe<S: Subscriber>(_ subscriber: S, transform: ((State) -> State)?) -> Void
-    func unsubscribe(_ subscriber: Subscriber) -> Void
-    func dispatch(_ action: Action) -> Void
-    func dispatch<T: State>(_ actionCreator: ActionCreator<T>) -> Void
+    init(reducer: Reducer, state: State?, middleware: [Middleware])
+    
+    mutating func subscribe(subscriber: Subscriber) -> Void
+    mutating func unsubscribe(subscriber: Subscriber) -> Void
+    mutating func dispatch(action: Action) -> Void
+    mutating func dispatch(actionCreator: ActionCreator) -> Void
     
 }

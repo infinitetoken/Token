@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F039928D1FB3BB4700A76CB7"
-               BuildableName = "TokenMobile.framework"
+               BuildableName = "Token.framework"
                BlueprintName = "TokenMobile"
                ReferencedContainer = "container:Token.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F039928D1FB3BB4700A76CB7"
-            BuildableName = "TokenMobile.framework"
+            BuildableName = "Token.framework"
             BlueprintName = "TokenMobile"
             ReferencedContainer = "container:Token.xcodeproj">
          </BuildableReference>
@@ -67,7 +67,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F039928D1FB3BB4700A76CB7"
-            BuildableName = "TokenMobile.framework"
+            BuildableName = "Token.framework"
             BlueprintName = "TokenMobile"
             ReferencedContainer = "container:Token.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F039928D1FB3BB4700A76CB7"
-            BuildableName = "TokenMobile.framework"
+            BuildableName = "Token.framework"
             BlueprintName = "TokenMobile"
             ReferencedContainer = "container:Token.xcodeproj">
          </BuildableReference>

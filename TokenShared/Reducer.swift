@@ -8,4 +8,6 @@
 
 import Foundation
 
-public typealias Reducer<State> = (_ action: Action, _ state: State?) -> State
+public protocol Reducer {
+    func reduce(action: Action, state: State?) -> State
+}

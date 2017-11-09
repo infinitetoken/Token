@@ -8,4 +8,6 @@
 
 import Foundation
 
-public typealias ActionCreator<State> = (_ state: State, _ store: Store) -> Action?
+public protocol ActionCreator {
+    func create(state: State?, store: Store) -> Action?
+}
