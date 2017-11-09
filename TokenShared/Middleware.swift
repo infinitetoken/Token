@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public typealias MiddlewareResult = (store: Store, action: Action, state: State?)
 
 public protocol Middleware {

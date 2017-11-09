@@ -10,7 +10,6 @@ import Foundation
 
 public struct Token: Store {
     
-    
     public var reducer: Reducer
     public var state: State? {
         didSet {
@@ -40,7 +39,7 @@ public struct Token: Store {
     
     mutating public func dispatch(action: Action) {        
         if self.middleware.count > 0 {
-            let initial: (Store, Action, State?) = (self, action, self.state)
+            let initial: MiddlewareResult = (self, action, self.state)
             if let result = self.middleware.reduce(initial, { (result, middleware) -> MiddlewareResult? in
                 guard let result = result else { return nil }
                 
