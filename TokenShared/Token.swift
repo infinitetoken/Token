@@ -8,38 +8,38 @@
 
 import Foundation
 
-struct Token: Store {
+public struct Token: Store {
     
-    var reducer: Reducer
-    var state: State? {
+    public var reducer: Reducer
+    public var state: State? {
         didSet {
             for subscriber in self.subscribers {
                 subscriber.onChange(newState: self.state)
             }
         }
     }
-    var middleware: [Middleware]
-    var subscribers: [Subscriber] = []
+    public var middleware: [Middleware]
+    public var subscribers: [Subscriber] = []
     
-    init(reducer: Reducer, state: State?, middleware: [Middleware]) {
+    public init(reducer: Reducer, state: State?, middleware: [Middleware]) {
         self.reducer = reducer
         self.state = state
         self.middleware = middleware
     }
     
-    mutating func subscribe(subscriber: Subscriber) {
+    mutating public func subscribe(subscriber: Subscriber) {
         self.subscribers.append(subscriber)
     }
     
-    mutating func unsubscribe(subscriber: Subscriber) {
+    mutating public func unsubscribe(subscriber: Subscriber) {
         // How to remove without Subscriber being Equatable? Or are we stuck with Equatable requirement here?
     }
     
-    mutating func dispatch(action: Action) {
+    mutating public func dispatch(action: Action) {
         self.state = self.reducer.reduce(action: action, state: self.state)
     }
     
-    mutating func dispatch(actionCreator: ActionCreator) {
+    mutating public func dispatch(actionCreator: ActionCreator) {
         if let action = actionCreator.create(state: self.state, store: self) {
             self.state = self.reducer.reduce(action: action, state: self.state)
         }

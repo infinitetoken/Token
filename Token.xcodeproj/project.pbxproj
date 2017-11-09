@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		F011743C1FB3F9A000310E98 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011743B1FB3F9A000310E98 /* Token.swift */; };
 		F011743D1FB3F9A000310E98 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011743B1FB3F9A000310E98 /* Token.swift */; };
+		F01174421FB410F600310E98 /* TokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01174411FB410F600310E98 /* TokenTests.swift */; };
+		F01174431FB410FC00310E98 /* TokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01174411FB410F600310E98 /* TokenTests.swift */; };
+		F01174461FB4115B00310E98 /* TestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01174451FB4115B00310E98 /* TestState.swift */; };
+		F01174471FB4115B00310E98 /* TestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01174451FB4115B00310E98 /* TestState.swift */; };
+		F01174491FB4118400310E98 /* TestReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01174481FB4118400310E98 /* TestReducer.swift */; };
+		F011744A1FB4118400310E98 /* TestReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01174481FB4118400310E98 /* TestReducer.swift */; };
+		F011744C1FB4123300310E98 /* TestAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011744B1FB4123300310E98 /* TestAction.swift */; };
+		F011744D1FB4123300310E98 /* TestAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011744B1FB4123300310E98 /* TestAction.swift */; };
+		F011744F1FB4126C00310E98 /* TestSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011744E1FB4126C00310E98 /* TestSubscriber.swift */; };
+		F01174501FB4126C00310E98 /* TestSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011744E1FB4126C00310E98 /* TestSubscriber.swift */; };
 		F03992791FB3BB1800A76CB7 /* Token.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F039926F1FB3BB1700A76CB7 /* Token.framework */; };
 		F03992801FB3BB1800A76CB7 /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = F03992721FB3BB1700A76CB7 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F03992971FB3BB4700A76CB7 /* Token.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F039928E1FB3BB4700A76CB7 /* Token.framework */; };
@@ -48,6 +58,11 @@
 
 /* Begin PBXFileReference section */
 		F011743B1FB3F9A000310E98 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		F01174411FB410F600310E98 /* TokenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTests.swift; sourceTree = "<group>"; };
+		F01174451FB4115B00310E98 /* TestState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestState.swift; sourceTree = "<group>"; };
+		F01174481FB4118400310E98 /* TestReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReducer.swift; sourceTree = "<group>"; };
+		F011744B1FB4123300310E98 /* TestAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAction.swift; sourceTree = "<group>"; };
+		F011744E1FB4126C00310E98 /* TestSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubscriber.swift; sourceTree = "<group>"; };
 		F039926F1FB3BB1700A76CB7 /* Token.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Token.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03992721FB3BB1700A76CB7 /* Token.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
 		F03992731FB3BB1700A76CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +117,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F01174441FB4114300310E98 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F01174451FB4115B00310E98 /* TestState.swift */,
+				F01174481FB4118400310E98 /* TestReducer.swift */,
+				F011744B1FB4123300310E98 /* TestAction.swift */,
+				F011744E1FB4126C00310E98 /* TestSubscriber.swift */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
 		F03992651FB3BB1700A76CB7 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +197,8 @@
 		F03992A61FB3BB7E00A76CB7 /* TokenTestsShared */ = {
 			isa = PBXGroup;
 			children = (
+				F01174411FB410F600310E98 /* TokenTests.swift */,
+				F01174441FB4114300310E98 /* Fixtures */,
 			);
 			path = TokenTestsShared;
 			sourceTree = "<group>";
@@ -326,6 +354,7 @@
 					};
 					F03992771FB3BB1800A76CB7 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					F039928D1FB3BB4700A76CB7 = {
@@ -410,6 +439,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01174491FB4118400310E98 /* TestReducer.swift in Sources */,
+				F011744C1FB4123300310E98 /* TestAction.swift in Sources */,
+				F011744F1FB4126C00310E98 /* TestSubscriber.swift in Sources */,
+				F01174421FB410F600310E98 /* TokenTests.swift in Sources */,
+				F01174461FB4115B00310E98 /* TestState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +466,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F011744A1FB4118400310E98 /* TestReducer.swift in Sources */,
+				F011744D1FB4123300310E98 /* TestAction.swift in Sources */,
+				F01174501FB4126C00310E98 /* TestSubscriber.swift in Sources */,
+				F01174431FB410FC00310E98 /* TokenTests.swift in Sources */,
+				F01174471FB4115B00310E98 /* TestState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = RLF8EEWY2Z;
@@ -621,6 +661,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.TokenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -629,6 +670,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = RLF8EEWY2Z;

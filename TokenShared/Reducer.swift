@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol Reducer {
-    func reduce(action: Action, state: State?) -> State
+    func reduce(action: Action, state: State?) -> State?
 }
