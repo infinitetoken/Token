@@ -9,6 +9,5 @@
 import Foundation
 
 public protocol Middleware {
-    func execute(action: Action, state: State?) -> Bool
+    func execute(store: Store, action: Action, state: State?) -> (Store, Action, State?)?
 }
-

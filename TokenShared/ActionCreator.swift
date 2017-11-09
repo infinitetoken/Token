@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol ActionCreator {
-    func create(state: State?, store: Store) -> Action?
+    func create(store: Store, state: State?, result: (_ action: Action?) -> Void) -> Void
 }

@@ -67,5 +67,82 @@ class TokenTests: XCTestCase {
         }
         XCTAssertEqual(state2.counter, 0)
     }
+    
+    func testCanDispatchActionCreator() {
+        let actionCreator = TestActionCreator()
+        
+        self.token.dispatch(actionCreator: actionCreator)
+        guard let state0 = self.token.state as? TestState else {
+            XCTFail()
+            return
+        }
+        XCTAssertEqual(state0.counter, 0)
+        
+        let increaseAction = TestAction.increase(amount: 1)
+        
+        self.token.dispatch(action: increaseAction)
+        guard let state1 = self.token.state as? TestState else {
+            XCTFail()
+            return
+        }
+        XCTAssertEqual(state1.counter, 1)
+        
+        self.token.dispatch(actionCreator: actionCreator)
+        guard let state2 = self.token.state as? TestState else {
+            XCTFail()
+            return
+        }
+        XCTAssertEqual(state2.counter, 0)
+    }
+    
+    func testSubscriberCanBeNotified() {
+        self.token.subscribe(subscriber: self.subscriber)
+        XCTAssertEqual(self.token.subscribers.count, 1)
+        XCTAssertEqual(self.subscriber.label, 0)
+        
+        let increaseAction = TestAction.increase(amount: 1)
+        
+        self.token.dispatch(action: increaseAction)
+        
+        XCTAssertEqual(self.subscriber.label, 1)
+        
+        self.token.dispatch(action: increaseAction)
+        
+        XCTAssertEqual(self.subscriber.label, 2)
+    }
+    
+    func testMiddlewareCanInterruptChain() {
+        let middleware = [TestMiddlewareNil()]
+        
+        self.token = Token(reducer: self.token.reducer, state: self.token.state, middleware: middleware)
+        
+        let increaseAction = TestAction.increase(amount: 1)
+        
+        self.token.dispatch(action: increaseAction)
+        
+        guard let state = self.token.state as? TestState else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssertEqual(state.counter, 0)
+    }
+    
+    func testMiddlewareCanChangeAction() {
+        let middleware = [TestMiddlewareActionChange()]
+        
+        self.token = Token(reducer: self.token.reducer, state: self.token.state, middleware: middleware)
+        
+        let increaseAction = TestAction.increase(amount: 1)
+        
+        self.token.dispatch(action: increaseAction)
+        
+        guard let state = self.token.state as? TestState else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssertEqual(state.counter, -1)
+    }
 
 }

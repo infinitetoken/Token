@@ -32,16 +32,31 @@ public struct Token: Store {
     }
     
     mutating public func unsubscribe(subscriber: Subscriber) {
-        // How to remove without Subscriber being Equatable? Or are we stuck with Equatable requirement here?
+        if let index = self.subscribers.index(where: { return $0 === subscriber }) {
+            self.subscribers.remove(at: index)
+        }
     }
     
     mutating public func dispatch(action: Action) {
-        self.state = self.reducer.reduce(action: action, state: self.state)
+        if self.middleware.count > 0 {
+            let initial: (Store, Action, State?) = (self, action, self.state)
+            if let result = self.middleware.reduce(initial, { (result, middleware) -> (Store, Action, State?)? in
+                guard let result = result else { return nil }
+                
+                return middleware.execute(store: result.0, action: result.1, state: result.2)
+            }) {
+                self.state = self.reducer.reduce(action: result.1, state: result.2)
+            }
+        } else {
+            self.state = self.reducer.reduce(action: action, state: self.state)
+        }
     }
     
     mutating public func dispatch(actionCreator: ActionCreator) {
-        if let action = actionCreator.create(state: self.state, store: self) {
-            self.state = self.reducer.reduce(action: action, state: self.state)
+        actionCreator.create(store: self, state: self.state) { (action: Action?) in
+            guard let action = action else { return }
+            
+            self.dispatch(action: action)
         }
     }
     

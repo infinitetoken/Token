@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol Subscriber {
+public protocol Subscriber: class {
     func onChange(newState: State?) -> Void
 }

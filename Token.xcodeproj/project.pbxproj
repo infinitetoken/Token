@@ -19,6 +19,12 @@
 		F011744D1FB4123300310E98 /* TestAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011744B1FB4123300310E98 /* TestAction.swift */; };
 		F011744F1FB4126C00310E98 /* TestSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011744E1FB4126C00310E98 /* TestSubscriber.swift */; };
 		F01174501FB4126C00310E98 /* TestSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011744E1FB4126C00310E98 /* TestSubscriber.swift */; };
+		F015F3A31FB4E24C00E4DE00 /* TestMiddlewareNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A21FB4E24C00E4DE00 /* TestMiddlewareNil.swift */; };
+		F015F3A41FB4E24C00E4DE00 /* TestMiddlewareNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A21FB4E24C00E4DE00 /* TestMiddlewareNil.swift */; };
+		F015F3A61FB4E44100E4DE00 /* TestMiddlewareActionChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A51FB4E44100E4DE00 /* TestMiddlewareActionChange.swift */; };
+		F015F3A71FB4E44100E4DE00 /* TestMiddlewareActionChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A51FB4E44100E4DE00 /* TestMiddlewareActionChange.swift */; };
+		F015F3A91FB4E53A00E4DE00 /* TestActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */; };
+		F015F3AA1FB4E53A00E4DE00 /* TestActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */; };
 		F03992791FB3BB1800A76CB7 /* Token.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F039926F1FB3BB1700A76CB7 /* Token.framework */; };
 		F03992801FB3BB1800A76CB7 /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = F03992721FB3BB1700A76CB7 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F03992971FB3BB4700A76CB7 /* Token.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F039928E1FB3BB4700A76CB7 /* Token.framework */; };
@@ -63,6 +69,9 @@
 		F01174481FB4118400310E98 /* TestReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReducer.swift; sourceTree = "<group>"; };
 		F011744B1FB4123300310E98 /* TestAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAction.swift; sourceTree = "<group>"; };
 		F011744E1FB4126C00310E98 /* TestSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubscriber.swift; sourceTree = "<group>"; };
+		F015F3A21FB4E24C00E4DE00 /* TestMiddlewareNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMiddlewareNil.swift; sourceTree = "<group>"; };
+		F015F3A51FB4E44100E4DE00 /* TestMiddlewareActionChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMiddlewareActionChange.swift; sourceTree = "<group>"; };
+		F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestActionCreator.swift; sourceTree = "<group>"; };
 		F039926F1FB3BB1700A76CB7 /* Token.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Token.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03992721FB3BB1700A76CB7 /* Token.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
 		F03992731FB3BB1700A76CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,6 +133,9 @@
 				F01174481FB4118400310E98 /* TestReducer.swift */,
 				F011744B1FB4123300310E98 /* TestAction.swift */,
 				F011744E1FB4126C00310E98 /* TestSubscriber.swift */,
+				F015F3A21FB4E24C00E4DE00 /* TestMiddlewareNil.swift */,
+				F015F3A51FB4E44100E4DE00 /* TestMiddlewareActionChange.swift */,
+				F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -439,9 +451,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F015F3A91FB4E53A00E4DE00 /* TestActionCreator.swift in Sources */,
 				F01174491FB4118400310E98 /* TestReducer.swift in Sources */,
 				F011744C1FB4123300310E98 /* TestAction.swift in Sources */,
 				F011744F1FB4126C00310E98 /* TestSubscriber.swift in Sources */,
+				F015F3A61FB4E44100E4DE00 /* TestMiddlewareActionChange.swift in Sources */,
+				F015F3A31FB4E24C00E4DE00 /* TestMiddlewareNil.swift in Sources */,
 				F01174421FB410F600310E98 /* TokenTests.swift in Sources */,
 				F01174461FB4115B00310E98 /* TestState.swift in Sources */,
 			);
@@ -466,9 +481,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F015F3AA1FB4E53A00E4DE00 /* TestActionCreator.swift in Sources */,
 				F011744A1FB4118400310E98 /* TestReducer.swift in Sources */,
 				F011744D1FB4123300310E98 /* TestAction.swift in Sources */,
 				F01174501FB4126C00310E98 /* TestSubscriber.swift in Sources */,
+				F015F3A71FB4E44100E4DE00 /* TestMiddlewareActionChange.swift in Sources */,
+				F015F3A41FB4E24C00E4DE00 /* TestMiddlewareNil.swift in Sources */,
 				F01174431FB410FC00310E98 /* TokenTests.swift in Sources */,
 				F01174471FB4115B00310E98 /* TestState.swift in Sources */,
 			);
