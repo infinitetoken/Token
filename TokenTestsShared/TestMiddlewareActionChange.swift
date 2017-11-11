@@ -11,7 +11,7 @@ import Token
 
 struct TestMiddlewareActionChange: Middleware {
     
-    func execute(store: Store, action: Action, state: State?) -> (Store, Action, State?)? {
+    func execute(store: Store, action: Action, state: State?) -> MiddlewareResult? {
         return (store, TestAction.decrease(amount: 1), state)
     }
     

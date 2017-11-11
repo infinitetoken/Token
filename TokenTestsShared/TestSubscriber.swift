@@ -13,7 +13,7 @@ class TestSubscriber: Subscriber {
     
     var label: Int = 0
     
-    func onChange(newState: State?) {
+    func onChange(newState: State?, action: Action) {
         if let state = newState as? TestState {
             self.label = state.counter
         }
