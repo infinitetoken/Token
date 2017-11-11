@@ -10,7 +10,6 @@ import Foundation
 
 public struct Token: Store {
     
-    
     public var reducer: Reducer
     public var state: State?
     public var middleware: [Middleware]
@@ -34,8 +33,7 @@ public struct Token: Store {
     
     mutating public func dispatch(action: Action) {        
         if self.middleware.count > 0 {
-            let initial: (Store, Action, State?) = (self, action, self.state)
-            
+            let initial: MiddlewareResult = (self, action, self.state)
             if let result = self.middleware.reduce(initial, { (result, middleware) -> MiddlewareResult? in
                 guard let result = result else { return nil }
                 return middleware.execute(store: result.store, action: result.action, state: result.state)
@@ -55,13 +53,4 @@ public struct Token: Store {
             self.dispatch(action: action)
         }
     }
-}
-
-
-
-
-enum DatabaseAction: Action {
-    case insert(indexPath: IndexPath?, object: Any)
-    case update(indexPath: IndexPath?, object: Any)
-    case delete(indexPath: IndexPath?, object: Any)
 }
