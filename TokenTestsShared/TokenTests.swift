@@ -21,7 +21,11 @@ class TokenTests: XCTestCase {
         let state = TestState()
         let middleware: [Middleware] = []
         
-        let token = Token(reducer: reducer, state: state, middleware: middleware)
+        let token = Token()
+        token.reducer = reducer
+        token.state = state
+        token.middleware = middleware
+        
         let subsciber = TestSubscriber()
         
         self.token = token
@@ -112,9 +116,7 @@ class TokenTests: XCTestCase {
     }
     
     func testMiddlewareCanInterruptChain() {
-        let middleware = [TestMiddlewareNil()]
-        
-        self.token = Token(reducer: self.token.reducer, state: self.token.state, middleware: middleware)
+        self.token.middleware = [TestMiddlewareNil()]
         
         let increaseAction = TestAction.increase(amount: 1)
         
@@ -129,9 +131,7 @@ class TokenTests: XCTestCase {
     }
     
     func testMiddlewareCanChangeAction() {
-        let middleware = [TestMiddlewareActionChange()]
-        
-        self.token = Token(reducer: self.token.reducer, state: self.token.state, middleware: middleware)
+        self.token.middleware = [TestMiddlewareActionChange()]
         
         let increaseAction = TestAction.increase(amount: 1)
         
