@@ -10,7 +10,7 @@ import Foundation
 
 public class Token: Store {
     
-    static let shared = Token()
+    public static let shared = Token()
     
     public var reducer: Reducer?
     public var state: State?
