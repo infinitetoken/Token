@@ -2,8 +2,9 @@
 
 [![Carthage](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Token is a Swift implementation of Redux!
+Token is a unidirectional data flow framework for Swift!
 
+- [Installation](#installation)
 - [License](#license)
 
 ## Installation with Carthage
@@ -12,14 +13,16 @@ Token is a Swift implementation of Redux!
 
 You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
 
-```bash
+```
+bash
 $ brew update
 $ brew install carthage
 ```
 
-To integrate Arcade into your Xcode project using Carthage, specify it in your `Cartfile`:
+To integrate Token into your Xcode project using Carthage, specify it in your `Cartfile`:
 
-```ogdl
+```
+ogdl
 github "infinitetoken/Token" ~> 1.0
 ```
 
