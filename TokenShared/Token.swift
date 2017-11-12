@@ -10,16 +10,14 @@ import Foundation
 
 public class Token: Store {
     
-    public var reducer: Reducer
+    static let shared = Token()
+    
+    public var reducer: Reducer?
     public var state: State?
-    public var middleware: [Middleware]
+    public var middleware: [Middleware] = []
     public var subscribers: [Subscriber] = []
     
-    public required init(reducer: Reducer, state: State?, middleware: [Middleware]) {
-        self.reducer = reducer
-        self.state = state
-        self.middleware = middleware
-    }
+    public init() {}
     
     public func subscribe(subscriber: Subscriber) {
         self.subscribers.append(subscriber)
@@ -38,10 +36,10 @@ public class Token: Store {
                 guard let result = result else { return nil }
                 return middleware.execute(store: result.store, action: result.action, state: result.state)
             }) {
-                self.state = self.reducer.reduce(action: result.action, state: result.state)
+                self.state = self.reducer?.reduce(action: result.action, state: result.state)
             }
         } else {
-            self.state = self.reducer.reduce(action: action, state: self.state)
+            self.state = self.reducer?.reduce(action: action, state: self.state)
         }
         
         subscribers.forEach { $0.onChange(newState: self.state, action: action) }

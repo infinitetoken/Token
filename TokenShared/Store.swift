@@ -10,12 +10,10 @@ import Foundation
 
 public protocol Store {
     
-    var reducer: Reducer { get }
+    var reducer: Reducer? { get }
     var state: State? { get }
-    var middleware: [Middleware] { get }
+    var middleware: [Middleware] { get set }
     var subscribers: [Subscriber] { get set }
-    
-    init(reducer: Reducer, state: State?, middleware: [Middleware])
     
     mutating func subscribe(subscriber: Subscriber) -> Void
     mutating func unsubscribe(subscriber: Subscriber) -> Void
