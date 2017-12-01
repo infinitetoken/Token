@@ -20,8 +20,8 @@ public class Token: Store {
     public init() {}
     
     public func subscribe(subscriber: Subscriber) {
-        guard !(self.subscribers.contains { $0 === subscriber }) else { return }
-        self.subscribers.append(subscriber)
+        guard !(subscribers.contains { $0 === subscriber }) else { return }
+        subscribers.append(subscriber)
     }
     
     public func unsubscribe(subscriber: Subscriber) {
