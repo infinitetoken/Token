@@ -20,6 +20,7 @@ public class Token: Store {
     public init() {}
     
     public func subscribe(subscriber: Subscriber) {
+        guard !(self.subscribers.contains { $0 === subscriber }) else { return }
         self.subscribers.append(subscriber)
     }
     
@@ -46,7 +47,7 @@ public class Token: Store {
     }
     
     public func dispatch(actionCreator: ActionCreator) {
-        actionCreator.create(store: self, state: self.state) { (action: Action?) in
+        actionCreator.create(store: self, state: self.state) { action in
             guard let action = action else { return }
             self.dispatch(action: action)
         }
