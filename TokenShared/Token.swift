@@ -25,9 +25,7 @@ public class Token: Store {
     }
     
     public func unsubscribe(subscriber: Subscriber) {
-        if let index = self.subscribers.index(where: { return $0 === subscriber }) {
-            self.subscribers.remove(at: index)
-        }
+        subscribers = subscribers.filter { !($0 === subscriber) }
     }
     
     public func dispatch(action: Action) {
