@@ -9,6 +9,12 @@
 import Foundation
 
 
+public var token: Token { return Token.shared }
+
+public func dispatch(_ action: Action) {Token.shared.dispatch(action: action)}
+public func dispatch(_ actionCreator: ActionCreator) {Token.shared.dispatch(actionCreator: actionCreator)}
+
+
 public class Token: Store {
     
     public static let shared = Token()
