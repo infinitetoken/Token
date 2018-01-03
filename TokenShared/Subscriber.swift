@@ -15,23 +15,7 @@ public protocol Subscriber: class {
 
 public extension Subscriber {
     
-    public var token: Token {
-       return Token.shared
-    }
+    public func subscribe() { token.subscribe(subscriber: self) }
+    public func unsubscribe() { token.unsubscribe(subscriber: self) }
     
-    public func subscribe() {
-        token.subscribe(subscriber: self)
-    }
-    
-    public func unsubscribe() {
-        token.unsubscribe(subscriber: self)
-    }
-    
-    public func dispatch(_ action: Action) {
-        token.dispatch(action: action)
-    }
-    
-    public func dispatch(_ actionCreator: ActionCreator) {
-        token.dispatch(actionCreator: actionCreator)
-    }
 }
