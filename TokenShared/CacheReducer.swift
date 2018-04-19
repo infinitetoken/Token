@@ -17,13 +17,6 @@ public struct CacheReducer<A>: Reducer where A : Cacheable {
         guard let newState = state as? Cache<A> else { return state }
         
         switch action {
-        case .selectAndReplace(let cacheables): return newState.selectAndReplace(cacheables)
-        case .selectAndMerge(let cacheables): return newState.selectAndMerge(cacheables)
-        case .selectPrevious: return newState.selectPrevious()
-        case .selectNext: return newState.selectNext()
-        case .selectAll: return newState.selectAll()
-        case .deselect(let cacheables): return newState.deselect(cacheables)
-        case .deselectAll: return newState.deselectAll()
         case .add(let cacheables): return newState.add(cacheables)
         case .remove(let cacheables): return newState.remove(cacheables)
         case .clear: return newState.clear()

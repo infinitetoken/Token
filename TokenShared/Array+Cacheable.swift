@@ -1,5 +1,5 @@
 //
-//  Array+Cacheable.swift
+//  Array+cacheable.swift
 //  Token
 //
 //  Created by Paul Foster on 1/31/18.
@@ -16,55 +16,55 @@ public extension Array where Element == Cacheable {
     public func items<T: Cacheable>() -> [T] { return compactMap { $0 as? T } }
     public func items(for uuids: [UUID]) -> [Cacheable] { return filter { uuids.contains($0.uuid) } }
     
-    public func contains(_ Cacheable: Cacheable) -> Bool { return uuids().contains(Cacheable.uuid)  }
+    public func contains(_ cacheable: Cacheable) -> Bool { return uuids().contains(cacheable.uuid)  }
     
     public func item<T: Cacheable>(for UUID: UUID) -> T? {
-        return reduce(nil, { (result, Cacheable) -> T? in
+        return reduce(nil, { (result, cacheable) -> T? in
             if let result = result { return result }
-            if Cacheable.uuid != UUID { return nil }
-            return Cacheable as? T
+            if cacheable.uuid != UUID { return nil }
+            return cacheable as? T
         })
     }
     
     public func item(for UUID: UUID) -> Cacheable? {
-        return reduce(nil, { (result, Cacheable) -> Cacheable? in
+        return reduce(nil, { (result, cacheable) -> Cacheable? in
             if let result = result { return result }
-            if Cacheable.uuid != UUID { return nil }
-            return Cacheable
+            if cacheable.uuid != UUID { return nil }
+            return cacheable
         })
     }
     
     // MARK: - Maps
     
-    internal func merging(_ Cacheable: Cacheable) -> [Cacheable] {
+    internal func merging(_ cacheable: Cacheable) -> [Cacheable] {
         var found: Bool = false
         
         let result: [Cacheable] = map {
-            if $0 == Cacheable {
+            if $0 == cacheable {
                 found = true
-                return Cacheable
+                return cacheable
             } else {
                 return $0
             }
         }
         
-        if !found { return result.appending(Cacheable) } else { return result }
+        if !found { return result.appending(cacheable) } else { return result }
     }
     
-    internal func merging(_ Cacheables: [Cacheable]) -> [Cacheable] {
+    internal func merging(_ cacheable: [Cacheable]) -> [Cacheable] {
         var result = self
-        result.merge(Cacheables)
+        result.merge(cacheable)
         return result
     }
         
     internal func removing(_ Cacheable: Cacheable) -> [Cacheable] { return filter { $0 != Cacheable } }
-    internal func removing(_ Cacheables: [Cacheable]) -> [Cacheable] { return filter { !Cacheables.contains($0) } }
+    internal func removing(_ cacheable: [Cacheable]) -> [Cacheable] { return filter { !cacheable.contains($0) } }
     
     // MARK: - Mutations
     
-    internal mutating func remove(_ Cacheables: [Cacheable]) { self = removing(Cacheables) }
-    internal mutating func remove(_ Cacheable: Cacheable) { self = removing(Cacheable) }
-    internal mutating func merge(_ Cacheable: Cacheable) { self = merging(Cacheable) }
-    internal mutating func merge(_ Cacheables: [Cacheable]) { Cacheables.forEach { self.merge($0) } }
+    internal mutating func remove(_ cacheable: [Cacheable]) { self = removing(cacheable) }
+    internal mutating func remove(_ cacheable: Cacheable) { self = removing(cacheable) }
+    internal mutating func merge(_ cacheable: Cacheable) { self = merging(cacheable) }
+    internal mutating func merge(_ cacheable: [Cacheable]) { cacheable.forEach { self.merge($0) } }
     
 }
