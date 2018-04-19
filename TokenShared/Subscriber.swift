@@ -12,7 +12,6 @@ public protocol Subscriber: class {
     func onChange(newState: State?, action: Action) -> Void
 }
 
-
 public extension Subscriber {
     
     public func subscribe() { token.subscribe(subscriber: self) }
