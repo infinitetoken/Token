@@ -12,6 +12,8 @@ public struct Cache<T: Cacheable>: State {
     
     var cache: [Cacheable] = []
     
+    public init() {}
+    
 }
 
 extension Cache {
