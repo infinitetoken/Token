@@ -36,7 +36,7 @@ public extension Array where Element == Cacheable {
     
     // MARK: - Maps
     
-    internal func merging(_ cacheable: Cacheable) -> [Cacheable] {
+    public func merging(_ cacheable: Cacheable) -> [Cacheable] {
         var found: Bool = false
         
         let result: [Cacheable] = map {
@@ -51,20 +51,20 @@ public extension Array where Element == Cacheable {
         if !found { return result.appending(cacheable) } else { return result }
     }
     
-    internal func merging(_ cacheable: [Cacheable]) -> [Cacheable] {
+    public func merging(_ cacheable: [Cacheable]) -> [Cacheable] {
         var result = self
         result.merge(cacheable)
         return result
     }
         
-    internal func removing(_ Cacheable: Cacheable) -> [Cacheable] { return filter { $0 != Cacheable } }
-    internal func removing(_ cacheable: [Cacheable]) -> [Cacheable] { return filter { !cacheable.contains($0) } }
+    public func removing(_ Cacheable: Cacheable) -> [Cacheable] { return filter { $0 != Cacheable } }
+    public func removing(_ cacheable: [Cacheable]) -> [Cacheable] { return filter { !cacheable.contains($0) } }
     
     // MARK: - Mutations
     
-    internal mutating func remove(_ cacheable: [Cacheable]) { self = removing(cacheable) }
-    internal mutating func remove(_ cacheable: Cacheable) { self = removing(cacheable) }
-    internal mutating func merge(_ cacheable: Cacheable) { self = merging(cacheable) }
-    internal mutating func merge(_ cacheable: [Cacheable]) { cacheable.forEach { self.merge($0) } }
+    public mutating func remove(_ cacheable: [Cacheable]) { self = removing(cacheable) }
+    public mutating func remove(_ cacheable: Cacheable) { self = removing(cacheable) }
+    public mutating func merge(_ cacheable: Cacheable) { self = merging(cacheable) }
+    public mutating func merge(_ cacheable: [Cacheable]) { cacheable.forEach { self.merge($0) } }
     
 }
