@@ -12,13 +12,13 @@ public extension Array where Element == Cacheable {
     
     // MARK: - Getters
     
-    public func uuids() -> [UUID] { return map { $0.uuid } }
+    public func uuids() -> [String] { return map { $0.uuid } }
     public func items<T: Cacheable>() -> [T] { return compactMap { $0 as? T } }
-    public func items(for uuids: [UUID]) -> [Cacheable] { return filter { uuids.contains($0.uuid) } }
+    public func items(for uuids: [String]) -> [Cacheable] { return filter { uuids.contains($0.uuid) } }
     
     public func contains(_ cacheable: Cacheable) -> Bool { return uuids().contains(cacheable.uuid)  }
     
-    public func item<T: Cacheable>(for UUID: UUID) -> T? {
+    public func item<T: Cacheable>(for UUID: String) -> T? {
         return reduce(nil, { (result, cacheable) -> T? in
             if let result = result { return result }
             if cacheable.uuid != UUID { return nil }
@@ -26,7 +26,7 @@ public extension Array where Element == Cacheable {
         })
     }
     
-    public func item(for UUID: UUID) -> Cacheable? {
+    public func item(for UUID: String) -> Cacheable? {
         return reduce(nil, { (result, cacheable) -> Cacheable? in
             if let result = result { return result }
             if cacheable.uuid != UUID { return nil }

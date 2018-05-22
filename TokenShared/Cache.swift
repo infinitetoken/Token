@@ -28,7 +28,7 @@ extension Cache {
 extension Cache {
     
     public func items() -> [T] { return cache as! [T] }
-    public func item(for UUID: UUID) -> T? { return cache.item(for: UUID) }
+    public func item(for UUID: String) -> T? { return cache.item(for: UUID) }
     public func item(atIndex index: Int) -> T? { return cache[index] as? T }
     
 }
