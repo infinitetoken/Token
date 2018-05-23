@@ -8,23 +8,15 @@
 
 import Foundation
 
-public extension Array where Element == Cacheable {
+public extension Array where Element: Cacheable {
     
     // MARK: - Getters
     
     public func uuids() -> [String] { return map { $0.uuid } }
-    public func items<T: Cacheable>() -> [T] { return compactMap { $0 as? T } }
+//    public func items<T: Element>() -> [T] where T: Cacheable { return compactMap { $0 as? T } }
     public func items(for uuids: [String]) -> [Element] { return filter { uuids.contains($0.uuid) } }
     
     public func contains(_ cacheable: Element) -> Bool { return uuids().contains(cacheable.uuid)  }
-    
-    public func item<T: Cacheable>(for UUID: String) -> T? {
-        return reduce(nil, { (result, cacheable) -> T? in
-            if let result = result { return result }
-            if cacheable.uuid != UUID { return nil }
-            return cacheable as? T
-        })
-    }
     
     public func item(for UUID: String) -> Element? {
         return reduce(nil, { (result, cacheable) -> Element? in
@@ -33,6 +25,14 @@ public extension Array where Element == Cacheable {
             return cacheable
         })
     }
+    
+//    public func item(for UUID: String) -> Element? {
+//        return reduce(nil, { (result, cacheable) -> Element? in
+//            if let result = result { return result }
+//            if cacheable.uuid != UUID { return nil }
+//            return cacheable
+//        })
+//    }
     
     // MARK: - Maps
     
@@ -51,13 +51,13 @@ public extension Array where Element == Cacheable {
         if !found { return result.appending(cacheable) } else { return result }
     }
     
-    public func merging(_ cacheable: [Element]) -> [Element] {
+    public func merging(cacheables: [Element]) -> [Element] {
         var result = self
-        result.merge(cacheable)
+        result.merge(cacheables)
         return result
     }
         
-    public func removing(_ Cacheable: Element) -> [Element] { return filter { $0 != Cacheable } }
+    public func removing(_ cacheable: Element) -> [Element] { return filter { $0 != cacheable } }
     public func removing(_ cacheable: [Element]) -> [Element] { return filter { !cacheable.contains($0) } }
     
     // MARK: - Mutations
