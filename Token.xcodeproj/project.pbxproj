@@ -25,6 +25,40 @@
 		F015F3A71FB4E44100E4DE00 /* TestMiddlewareActionChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A51FB4E44100E4DE00 /* TestMiddlewareActionChange.swift */; };
 		F015F3A91FB4E53A00E4DE00 /* TestActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */; };
 		F015F3AA1FB4E53A00E4DE00 /* TestActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */; };
+		F01EA1042101CA100040FA96 /* Token.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01EA0FB2101CA0F0040FA96 /* Token.framework */; };
+		F01EA10B2101CA100040FA96 /* TokenTV.h in Headers */ = {isa = PBXBuildFile; fileRef = F01EA0FD2101CA0F0040FA96 /* TokenTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F01EA1132101CA320040FA96 /* TokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01174411FB410F600310E98 /* TokenTests.swift */; };
+		F01EA1142101CA360040FA96 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DEA02088889C00061A5E /* CacheTests.swift */; };
+		F01EA1152101CA360040FA96 /* CacheActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DEA3208888A600061A5E /* CacheActionTests.swift */; };
+		F01EA1162101CA360040FA96 /* CacheReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DEA6208888B000061A5E /* CacheReducerTests.swift */; };
+		F01EA1172101CA3C0040FA96 /* IndexSetInsertingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE9A208887A500061A5E /* IndexSetInsertingTests.swift */; };
+		F01EA1182101CA3C0040FA96 /* StateMutatedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE9B208887A500061A5E /* StateMutatedTests.swift */; };
+		F01EA1192101CA3C0040FA96 /* ArrayAppendingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DEA9208888BC00061A5E /* ArrayAppendingTests.swift */; };
+		F01EA11A2101CA3C0040FA96 /* ArrayCacheableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DEAC208888C800061A5E /* ArrayCacheableTests.swift */; };
+		F01EA11B2101CA420040FA96 /* TestState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01174451FB4115B00310E98 /* TestState.swift */; };
+		F01EA11C2101CA420040FA96 /* TestReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01174481FB4118400310E98 /* TestReducer.swift */; };
+		F01EA11D2101CA420040FA96 /* TestAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011744B1FB4123300310E98 /* TestAction.swift */; };
+		F01EA11E2101CA420040FA96 /* TestSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011744E1FB4126C00310E98 /* TestSubscriber.swift */; };
+		F01EA11F2101CA420040FA96 /* TestMiddlewareNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A21FB4E24C00E4DE00 /* TestMiddlewareNil.swift */; };
+		F01EA1202101CA420040FA96 /* TestMiddlewareActionChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A51FB4E44100E4DE00 /* TestMiddlewareActionChange.swift */; };
+		F01EA1212101CA420040FA96 /* TestActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */; };
+		F01EA1222101CA4E0040FA96 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011743B1FB3F9A000310E98 /* Token.swift */; };
+		F01EA1232101CA530040FA96 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992B51FB3BDC700A76CB7 /* Action.swift */; };
+		F01EA1242101CA530040FA96 /* ActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992C11FB3C0E200A76CB7 /* ActionCreator.swift */; };
+		F01EA1252101CA530040FA96 /* ArrayReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022EAD61FF35EA800EBB153 /* ArrayReducer.swift */; };
+		F01EA1262101CA530040FA96 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992B81FB3BE7900A76CB7 /* Middleware.swift */; };
+		F01EA1272101CA530040FA96 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992AF1FB3BD6900A76CB7 /* Reducer.swift */; };
+		F01EA1282101CA530040FA96 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992B21FB3BD8500A76CB7 /* State.swift */; };
+		F01EA1292101CA530040FA96 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992AC1FB3BD3300A76CB7 /* Store.swift */; };
+		F01EA12A2101CA530040FA96 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992BB1FB3BF7100A76CB7 /* Subscriber.swift */; };
+		F01EA12B2101CA530040FA96 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE92208883D300061A5E /* Cacheable.swift */; };
+		F01EA12C2101CA590040FA96 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE83208883AE00061A5E /* Cache.swift */; };
+		F01EA12D2101CA590040FA96 /* CacheAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7E208883AD00061A5E /* CacheAction.swift */; };
+		F01EA12E2101CA590040FA96 /* CacheReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7D208883AD00061A5E /* CacheReducer.swift */; };
+		F01EA12F2101CA5E0040FA96 /* State+Mutated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE81208883AE00061A5E /* State+Mutated.swift */; };
+		F01EA1302101CA5E0040FA96 /* IndexSet+Inserting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE952088855500061A5E /* IndexSet+Inserting.swift */; };
+		F01EA1312101CA5E0040FA96 /* Array+Appending.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE82208883AE00061A5E /* Array+Appending.swift */; };
+		F01EA1322101CA5E0040FA96 /* Array+Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7F208883AD00061A5E /* Array+Cacheable.swift */; };
 		F022EAD71FF35EA800EBB153 /* ArrayReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022EAD61FF35EA800EBB153 /* ArrayReducer.swift */; };
 		F022EAD81FF35EA800EBB153 /* ArrayReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022EAD61FF35EA800EBB153 /* ArrayReducer.swift */; };
 		F03992791FB3BB1800A76CB7 /* Token.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F039926F1FB3BB1700A76CB7 /* Token.framework */; };
@@ -78,6 +112,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F01EA1052101CA100040FA96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F03992661FB3BB1700A76CB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F01EA0FA2101CA0F0040FA96;
+			remoteInfo = TokenTV;
+		};
 		F039927A1FB3BB1800A76CB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F03992661FB3BB1700A76CB7 /* Project object */;
@@ -104,6 +145,11 @@
 		F015F3A21FB4E24C00E4DE00 /* TestMiddlewareNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMiddlewareNil.swift; sourceTree = "<group>"; };
 		F015F3A51FB4E44100E4DE00 /* TestMiddlewareActionChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMiddlewareActionChange.swift; sourceTree = "<group>"; };
 		F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestActionCreator.swift; sourceTree = "<group>"; };
+		F01EA0FB2101CA0F0040FA96 /* Token.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Token.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01EA0FD2101CA0F0040FA96 /* TokenTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokenTV.h; sourceTree = "<group>"; };
+		F01EA0FE2101CA0F0040FA96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01EA1032101CA100040FA96 /* TokenTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01EA10A2101CA100040FA96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F022EAD61FF35EA800EBB153 /* ArrayReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayReducer.swift; sourceTree = "<group>"; };
 		F039926F1FB3BB1700A76CB7 /* Token.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Token.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03992721FB3BB1700A76CB7 /* Token.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
@@ -141,6 +187,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F01EA0F72101CA0F0040FA96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01EA1002101CA100040FA96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01EA1042101CA100040FA96 /* Token.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F039926B1FB3BB1700A76CB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,15 +249,42 @@
 			name = Fixtures;
 			sourceTree = "<group>";
 		};
+		F01EA0FC2101CA0F0040FA96 /* TokenTV */ = {
+			isa = PBXGroup;
+			children = (
+				F01EA1122101CA190040FA96 /* Supporting Files */,
+			);
+			path = TokenTV;
+			sourceTree = "<group>";
+		};
+		F01EA1072101CA100040FA96 /* TokenTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				F01EA10A2101CA100040FA96 /* Info.plist */,
+			);
+			path = TokenTVTests;
+			sourceTree = "<group>";
+		};
+		F01EA1122101CA190040FA96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F01EA0FD2101CA0F0040FA96 /* TokenTV.h */,
+				F01EA0FE2101CA0F0040FA96 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F03992651FB3BB1700A76CB7 = {
 			isa = PBXGroup;
 			children = (
 				F03992A51FB3BB6100A76CB7 /* TokenShared */,
 				F03992711FB3BB1700A76CB7 /* Token */,
 				F039928F1FB3BB4700A76CB7 /* TokenMobile */,
+				F01EA0FC2101CA0F0040FA96 /* TokenTV */,
 				F03992A61FB3BB7E00A76CB7 /* TokenTestsShared */,
 				F039927C1FB3BB1800A76CB7 /* TokenTests */,
 				F039929A1FB3BB4700A76CB7 /* TokenMobileTests */,
+				F01EA1072101CA100040FA96 /* TokenTVTests */,
 				F03992701FB3BB1700A76CB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -208,6 +296,8 @@
 				F03992781FB3BB1800A76CB7 /* TokenTests.xctest */,
 				F039928E1FB3BB4700A76CB7 /* Token.framework */,
 				F03992961FB3BB4700A76CB7 /* TokenMobileTests.xctest */,
+				F01EA0FB2101CA0F0040FA96 /* Token.framework */,
+				F01EA1032101CA100040FA96 /* TokenTVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -354,6 +444,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		F01EA0F82101CA0F0040FA96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01EA10B2101CA100040FA96 /* TokenTV.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F039926C1FB3BB1700A76CB7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +471,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F01EA0FA2101CA0F0040FA96 /* TokenTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F01EA1102101CA100040FA96 /* Build configuration list for PBXNativeTarget "TokenTV" */;
+			buildPhases = (
+				F01EA0F62101CA0F0040FA96 /* Sources */,
+				F01EA0F72101CA0F0040FA96 /* Frameworks */,
+				F01EA0F82101CA0F0040FA96 /* Headers */,
+				F01EA0F92101CA0F0040FA96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokenTV;
+			productName = TokenTV;
+			productReference = F01EA0FB2101CA0F0040FA96 /* Token.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F01EA1022101CA100040FA96 /* TokenTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F01EA1112101CA100040FA96 /* Build configuration list for PBXNativeTarget "TokenTVTests" */;
+			buildPhases = (
+				F01EA0FF2101CA100040FA96 /* Sources */,
+				F01EA1002101CA100040FA96 /* Frameworks */,
+				F01EA1012101CA100040FA96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F01EA1062101CA100040FA96 /* PBXTargetDependency */,
+			);
+			name = TokenTVTests;
+			productName = TokenTVTests;
+			productReference = F01EA1032101CA100040FA96 /* TokenTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F039926E1FB3BB1700A76CB7 /* Token */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F03992831FB3BB1800A76CB7 /* Build configuration list for PBXNativeTarget "Token" */;
@@ -451,10 +585,18 @@
 		F03992661FB3BB1700A76CB7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Aaron Wright";
 				TargetAttributes = {
+					F01EA0FA2101CA0F0040FA96 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
+					F01EA1022101CA100040FA96 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
 					F039926E1FB3BB1700A76CB7 = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
@@ -492,11 +634,27 @@
 				F03992771FB3BB1800A76CB7 /* TokenTests */,
 				F039928D1FB3BB4700A76CB7 /* TokenMobile */,
 				F03992951FB3BB4700A76CB7 /* TokenMobileTests */,
+				F01EA0FA2101CA0F0040FA96 /* TokenTV */,
+				F01EA1022101CA100040FA96 /* TokenTVTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F01EA0F92101CA0F0040FA96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01EA1012101CA100040FA96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F039926D1FB3BB1700A76CB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,6 +686,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F01EA0F62101CA0F0040FA96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01EA1322101CA5E0040FA96 /* Array+Cacheable.swift in Sources */,
+				F01EA1312101CA5E0040FA96 /* Array+Appending.swift in Sources */,
+				F01EA1262101CA530040FA96 /* Middleware.swift in Sources */,
+				F01EA12E2101CA590040FA96 /* CacheReducer.swift in Sources */,
+				F01EA1242101CA530040FA96 /* ActionCreator.swift in Sources */,
+				F01EA1272101CA530040FA96 /* Reducer.swift in Sources */,
+				F01EA12F2101CA5E0040FA96 /* State+Mutated.swift in Sources */,
+				F01EA1292101CA530040FA96 /* Store.swift in Sources */,
+				F01EA12C2101CA590040FA96 /* Cache.swift in Sources */,
+				F01EA12B2101CA530040FA96 /* Cacheable.swift in Sources */,
+				F01EA1302101CA5E0040FA96 /* IndexSet+Inserting.swift in Sources */,
+				F01EA1222101CA4E0040FA96 /* Token.swift in Sources */,
+				F01EA1252101CA530040FA96 /* ArrayReducer.swift in Sources */,
+				F01EA12A2101CA530040FA96 /* Subscriber.swift in Sources */,
+				F01EA1282101CA530040FA96 /* State.swift in Sources */,
+				F01EA12D2101CA590040FA96 /* CacheAction.swift in Sources */,
+				F01EA1232101CA530040FA96 /* Action.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01EA0FF2101CA100040FA96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01EA11D2101CA420040FA96 /* TestAction.swift in Sources */,
+				F01EA1212101CA420040FA96 /* TestActionCreator.swift in Sources */,
+				F01EA11F2101CA420040FA96 /* TestMiddlewareNil.swift in Sources */,
+				F01EA1192101CA3C0040FA96 /* ArrayAppendingTests.swift in Sources */,
+				F01EA1182101CA3C0040FA96 /* StateMutatedTests.swift in Sources */,
+				F01EA1152101CA360040FA96 /* CacheActionTests.swift in Sources */,
+				F01EA1142101CA360040FA96 /* CacheTests.swift in Sources */,
+				F01EA1132101CA320040FA96 /* TokenTests.swift in Sources */,
+				F01EA1162101CA360040FA96 /* CacheReducerTests.swift in Sources */,
+				F01EA11E2101CA420040FA96 /* TestSubscriber.swift in Sources */,
+				F01EA11C2101CA420040FA96 /* TestReducer.swift in Sources */,
+				F01EA1202101CA420040FA96 /* TestMiddlewareActionChange.swift in Sources */,
+				F01EA11A2101CA3C0040FA96 /* ArrayCacheableTests.swift in Sources */,
+				F01EA11B2101CA420040FA96 /* TestState.swift in Sources */,
+				F01EA1172101CA3C0040FA96 /* IndexSetInsertingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F039926A1FB3BB1700A76CB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -623,6 +827,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F01EA1062101CA100040FA96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F01EA0FA2101CA0F0040FA96 /* TokenTV */;
+			targetProxy = F01EA1052101CA100040FA96 /* PBXContainerItemProxy */;
+		};
 		F039927B1FB3BB1800A76CB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F039926E1FB3BB1700A76CB7 /* Token */;
@@ -636,6 +845,96 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F01EA10C2101CA100040FA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TokenTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.TokenTV;
+				PRODUCT_NAME = Token;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		F01EA10D2101CA100040FA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TokenTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.TokenTV;
+				PRODUCT_NAME = Token;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F01EA10E2101CA100040FA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				INFOPLIST_FILE = TokenTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.TokenTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		F01EA10F2101CA100040FA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLF8EEWY2Z;
+				INFOPLIST_FILE = TokenTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.TokenTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		F03992811FB3BB1800A76CB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -846,7 +1145,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TokenMobile/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.TokenMobile;
 				PRODUCT_NAME = Token;
@@ -872,7 +1171,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TokenMobile/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acwrightdesign.TokenMobile;
 				PRODUCT_NAME = Token;
@@ -924,6 +1223,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F01EA1102101CA100040FA96 /* Build configuration list for PBXNativeTarget "TokenTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01EA10C2101CA100040FA96 /* Debug */,
+				F01EA10D2101CA100040FA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F01EA1112101CA100040FA96 /* Build configuration list for PBXNativeTarget "TokenTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01EA10E2101CA100040FA96 /* Debug */,
+				F01EA10F2101CA100040FA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F03992691FB3BB1700A76CB7 /* Build configuration list for PBXProject "Token" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
