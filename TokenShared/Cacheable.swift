@@ -13,6 +13,6 @@ public func ==(lhs: Cacheable, rhs: Cacheable) -> Bool { return lhs.uuid == rhs.
 
 public protocol Cacheable {
     
-    var uuid: UUID { get set }
+    var uuid: String { get set }
     
 }

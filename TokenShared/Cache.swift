@@ -10,25 +10,26 @@ import Foundation
 
 public struct Cache<T: Cacheable>: State {
     
-    var cache: [Cacheable] = []
+    var cache: [T]
     
-    public init() {}
+    public init() {
+        self.cache = []
+    }
     
 }
 
 extension Cache {
     
-    func add(_ cacheables: [T]) -> Cache<T> { return mutated { $0.cache.merge(cacheables) } }
-    func merge(_ cacheables: [T]) -> Cache<T> { return mutated { $0.cache.merge(cacheables) } }
-    func remove(_ cacheables: [T]) -> Cache<T> { return mutated { $0.cache.remove(cacheables) } }
+    func add(_ cacheables: [T]) -> Cache<T> { return mutated { $0.cache = $0.cache.merging(cacheables: cacheables) } }
+    func remove(_ cacheables: [T]) -> Cache<T> { return mutated { $0.cache = $0.cache.removing(cacheables) } }
     func clear() -> Cache<T> { return mutated { $0.cache = [] } }
     
 }
 
 extension Cache {
     
-    public func items() -> [T] { return cache as! [T] }
-    public func item(for UUID: UUID) -> T? { return cache.item(for: UUID) }
-    public func item(atIndex index: Int) -> T? { return cache[index] as? T }
+    public func items() -> [T] { return cache }
+    public func item(for UUID: String) -> T? { return cache.item(for: UUID) }
+    public func item(atIndex index: Int) -> T? { return cache[index] }
     
 }

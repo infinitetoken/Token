@@ -8,38 +8,38 @@
 
 import Foundation
 
-public extension Array where Element == Cacheable {
+public extension Array where Element: Cacheable {
     
     // MARK: - Getters
     
-    public func uuids() -> [UUID] { return map { $0.uuid } }
-    public func items<T: Cacheable>() -> [T] { return compactMap { $0 as? T } }
-    public func items(for uuids: [UUID]) -> [Cacheable] { return filter { uuids.contains($0.uuid) } }
+    public func uuids() -> [String] { return map { $0.uuid } }
+//    public func items<T: Element>() -> [T] where T: Cacheable { return compactMap { $0 as? T } }
+    public func items(for uuids: [String]) -> [Element] { return filter { uuids.contains($0.uuid) } }
     
-    public func contains(_ cacheable: Cacheable) -> Bool { return uuids().contains(cacheable.uuid)  }
+    public func contains(_ cacheable: Element) -> Bool { return uuids().contains(cacheable.uuid)  }
     
-    public func item<T: Cacheable>(for UUID: UUID) -> T? {
-        return reduce(nil, { (result, cacheable) -> T? in
-            if let result = result { return result }
-            if cacheable.uuid != UUID { return nil }
-            return cacheable as? T
-        })
-    }
-    
-    public func item(for UUID: UUID) -> Cacheable? {
-        return reduce(nil, { (result, cacheable) -> Cacheable? in
+    public func item(for UUID: String) -> Element? {
+        return reduce(nil, { (result, cacheable) -> Element? in
             if let result = result { return result }
             if cacheable.uuid != UUID { return nil }
             return cacheable
         })
     }
     
+//    public func item(for UUID: String) -> Element? {
+//        return reduce(nil, { (result, cacheable) -> Element? in
+//            if let result = result { return result }
+//            if cacheable.uuid != UUID { return nil }
+//            return cacheable
+//        })
+//    }
+    
     // MARK: - Maps
     
-    public func merging(_ cacheable: Cacheable) -> [Cacheable] {
+    public func merging(_ cacheable: Element) -> [Element] {
         var found: Bool = false
         
-        let result: [Cacheable] = map {
+        let result: [Element] = map {
             if $0 == cacheable {
                 found = true
                 return cacheable
@@ -51,20 +51,20 @@ public extension Array where Element == Cacheable {
         if !found { return result.appending(cacheable) } else { return result }
     }
     
-    public func merging(_ cacheable: [Cacheable]) -> [Cacheable] {
+    public func merging(cacheables: [Element]) -> [Element] {
         var result = self
-        result.merge(cacheable)
+        result.merge(cacheables)
         return result
     }
         
-    public func removing(_ Cacheable: Cacheable) -> [Cacheable] { return filter { $0 != Cacheable } }
-    public func removing(_ cacheable: [Cacheable]) -> [Cacheable] { return filter { !cacheable.contains($0) } }
+    public func removing(_ cacheable: Element) -> [Element] { return filter { $0 != cacheable } }
+    public func removing(_ cacheable: [Element]) -> [Element] { return filter { !cacheable.contains($0) } }
     
     // MARK: - Mutations
     
-    public mutating func remove(_ cacheable: [Cacheable]) { self = removing(cacheable) }
-    public mutating func remove(_ cacheable: Cacheable) { self = removing(cacheable) }
-    public mutating func merge(_ cacheable: Cacheable) { self = merging(cacheable) }
-    public mutating func merge(_ cacheable: [Cacheable]) { cacheable.forEach { self.merge($0) } }
+    public mutating func remove(_ cacheable: [Element]) { self = removing(cacheable) }
+    public mutating func remove(_ cacheable: Element) { self = removing(cacheable) }
+    public mutating func merge(_ cacheable: Element) { self = merging(cacheable) }
+    public mutating func merge(_ cacheable: [Element]) { cacheable.forEach { self.merge($0) } }
     
 }
