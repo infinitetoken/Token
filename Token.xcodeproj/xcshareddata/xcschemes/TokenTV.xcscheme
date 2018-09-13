@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F01EA0FA2101CA0F0040FA96"
-               BuildableName = "TokenTV.framework"
+               BuildableName = "Token.framework"
                BlueprintName = "TokenTV"
                ReferencedContainer = "container:Token.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F01EA0FA2101CA0F0040FA96"
-            BuildableName = "TokenTV.framework"
+            BuildableName = "Token.framework"
             BlueprintName = "TokenTV"
             ReferencedContainer = "container:Token.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F01EA0FA2101CA0F0040FA96"
-            BuildableName = "TokenTV.framework"
+            BuildableName = "Token.framework"
             BlueprintName = "TokenTV"
             ReferencedContainer = "container:Token.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F01EA0FA2101CA0F0040FA96"
-            BuildableName = "TokenTV.framework"
+            BuildableName = "Token.framework"
             BlueprintName = "TokenTV"
             ReferencedContainer = "container:Token.xcodeproj">
          </BuildableReference>
