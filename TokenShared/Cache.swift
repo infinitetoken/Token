@@ -20,7 +20,8 @@ public struct Cache<T: Cacheable>: State {
 
 extension Cache {
     
-    func add(_ cacheables: [T]) -> Cache<T> { return mutated { $0.cache = $0.cache.merging(cacheables: cacheables) } }
+    func add(_ cacheables: [T]) -> Cache<T> { return mutated { $0.cache = $0.cache.appending(cacheables) } }
+    func merge(_ cacheables: [T]) -> Cache<T> { return mutated { $0.cache = $0.cache.merging(cacheables: cacheables) } }
     func remove(_ cacheables: [T]) -> Cache<T> { return mutated { $0.cache = $0.cache.removing(cacheables) } }
     func clear() -> Cache<T> { return mutated { $0.cache = [] } }
     

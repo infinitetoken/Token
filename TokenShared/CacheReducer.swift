@@ -18,6 +18,7 @@ public struct CacheReducer<A>: Reducer where A : Cacheable {
         
         switch action {
         case .add(let cacheables): return newState.add(cacheables)
+        case .merge(let cacheables): return newState.merge(cacheables)
         case .remove(let cacheables): return newState.remove(cacheables)
         case .clear: return newState.clear()
         case .error(_): return newState

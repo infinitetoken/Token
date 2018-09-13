@@ -10,6 +10,7 @@ import Foundation
 
 public enum CacheAction<T>: Action where T: Cacheable {
     case add([T])
+    case merge([T])
     case remove([T])
     case clear
     case error(Error?)
