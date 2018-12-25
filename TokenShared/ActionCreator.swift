@@ -9,5 +9,7 @@
 import Foundation
 
 public protocol ActionCreator {
+    
     func create(store: Store, state: State?, result: @escaping (_ action: Action?) -> Void) -> Void
+    
 }

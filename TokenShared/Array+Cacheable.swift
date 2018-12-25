@@ -13,7 +13,6 @@ public extension Array where Element: Cacheable {
     // MARK: - Getters
     
     public func uuids() -> [String] { return map { $0.uuid } }
-//    public func items<T: Element>() -> [T] where T: Cacheable { return compactMap { $0 as? T } }
     public func items(for uuids: [String]) -> [Element] { return filter { uuids.contains($0.uuid) } }
     
     public func contains(_ cacheable: Element) -> Bool { return uuids().contains(cacheable.uuid)  }
@@ -26,29 +25,27 @@ public extension Array where Element: Cacheable {
         })
     }
     
-//    public func item(for UUID: String) -> Element? {
-//        return reduce(nil, { (result, cacheable) -> Element? in
-//            if let result = result { return result }
-//            if cacheable.uuid != UUID { return nil }
-//            return cacheable
-//        })
-//    }
-    
     // MARK: - Maps
     
     public func merging(_ cacheable: Element) -> [Element] {
-        var found: Bool = false
+//        var found: Bool = false
+//
+//        let result: [Element] = map {
+//            if $0 == cacheable {
+//                found = true
+//                return cacheable
+//            } else {
+//                return $0
+//            }
+//        }
+//
+//        if !found { return result.appending(cacheable) } else { return result }
         
-        let result: [Element] = map {
-            if $0 == cacheable {
-                found = true
-                return cacheable
-            } else {
-                return $0
-            }
+        let result: [Element] = filter { (element) -> Bool in
+            return element != cacheable
         }
         
-        if !found { return result.appending(cacheable) } else { return result }
+        return result.appending(cacheable)
     }
     
     public func merging(cacheables: [Element]) -> [Element] {

@@ -44,14 +44,29 @@ class TokenTests: XCTestCase {
     }
     
     func testCanSubscribe() {
-        self.token.subscribe(subscriber: self.subscriber)
+        let subscriber1 = TestSubscriber()
+        
+        self.token.subscribe(subscriber: subscriber1)
+        
+        XCTAssertEqual(self.token.subscribers.count, 1)
+        
+        self.token.subscribe(subscriber: subscriber1)
+        
         XCTAssertEqual(self.token.subscribers.count, 1)
     }
     
     func testCanUnsubscribe() {
-        self.token.subscribe(subscriber: self.subscriber)
-        self.token.unsubscribe(subscriber: self.subscriber)
-        XCTAssertEqual(self.token.subscribers.count, 0)
+        let subscriber1 = TestSubscriber()
+        let subscriber2 = TestSubscriber()
+        
+        self.token.subscribe(subscriber: subscriber1)
+        self.token.subscribe(subscriber: subscriber2)
+        
+        XCTAssertEqual(self.token.subscribers.count, 2)
+        
+        self.token.unsubscribe(subscriber: subscriber1)
+        
+        XCTAssertEqual(self.token.subscribers.count, 1)
     }
     
     func testCanDispatch() {
@@ -115,21 +130,6 @@ class TokenTests: XCTestCase {
         XCTAssertEqual(self.subscriber.label, 2)
     }
     
-    func testMiddlewareCanInterruptChain() {
-        self.token.middleware = [TestMiddlewareNil()]
-        
-        let increaseAction = TestAction.increase(amount: 1)
-        
-        self.token.dispatch(action: increaseAction)
-        
-        guard let state = self.token.state as? TestState else {
-            XCTFail()
-            return
-        }
-        
-        XCTAssertEqual(state.counter, 0)
-    }
-    
     func testMiddlewareCanChangeAction() {
         self.token.middleware = [TestMiddlewareActionChange()]
         
@@ -144,5 +144,56 @@ class TokenTests: XCTestCase {
         
         XCTAssertEqual(state.counter, -1)
     }
-
+    
+    func testCacheableEquatable() {
+        let widget1 = TestWidget(uuid: "1")
+        let widget2 = TestWidget(uuid: "2")
+        let widget3 = TestWidget(uuid: "2")
+        
+        XCTAssertTrue(widget1 != widget2)
+        XCTAssertTrue(widget2 == widget3)
+    }
+    
+    func testSubscriber() {
+        let token = Token()
+        let subscriber = TestSubscriber()
+        
+        subscriber.subscribe(token: token)
+        
+        XCTAssertEqual(token.subscribers.count, 1)
+        
+        subscriber.unsubscribe(token: token)
+        
+        XCTAssertEqual(token.subscribers.count, 0)
+    }
+    
+    func testSubscriberCanGetSharedToken() {
+        let subscriber = TestSubscriber()
+        let token = subscriber.token
+        
+        XCTAssertNotNil(token)
+    }
+    
+    func testSubscriberCanDispatchAction() {
+        self.subscriber.dispatch(TestAction.increase(amount: 1), token: self.token)
+        
+        guard let newState = self.token.state as? TestState else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssertEqual(newState.counter, 1)
+    }
+    
+    func testSubscriberCanDispatchActionCreator() {
+        self.subscriber.dispatch(TestActionCreator(), token: self.token)
+        
+        guard let newState = self.token.state as? TestState else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssertEqual(newState.counter, 0)
+    }
+    
 }

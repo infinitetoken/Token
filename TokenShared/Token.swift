@@ -8,11 +8,6 @@
 
 import Foundation
 
-public var token: Token { return Token.shared }
-
-public func dispatch(_ action: Action) { Token.shared.dispatch(action: action) }
-public func dispatch(_ actionCreator: ActionCreator) { Token.shared.dispatch(actionCreator: actionCreator) }
-
 public class Token: Store {
     
     public static let shared = Token()
@@ -36,12 +31,10 @@ public class Token: Store {
     public func dispatch(action: Action) {
         if self.middleware.count > 0 {
             let initial: MiddlewareResult = (self, action, self.state)
-            if let result = self.middleware.reduce(initial, { (result, middleware) -> MiddlewareResult? in
-                guard let result = result else { return nil }
+            let result = self.middleware.reduce(initial, { (result, middleware) -> MiddlewareResult in
                 return middleware.execute(store: result.store, action: result.action, state: result.state)
-            }) {
-                self.state = self.reducer?.reduce(action: result.action, state: result.state)
-            }
+            })
+            self.state = self.reducer?.reduce(action: result.action, state: result.state)
         } else {
             self.state = self.reducer?.reduce(action: action, state: self.state)
         }

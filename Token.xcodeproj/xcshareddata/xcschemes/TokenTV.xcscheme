@@ -26,7 +26,18 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F01EA0FA2101CA0F0040FA96"
+            BuildableName = "Token.framework"
+            BlueprintName = "TokenTV"
+            ReferencedContainer = "container:Token.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">

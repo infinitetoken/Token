@@ -11,7 +11,6 @@ import Token
 
 struct TestActionCreator: ActionCreator {
     
-    
     func create(store: Store, state: State?, result: @escaping (Action?) -> Void) {
         if let state = state as? TestState {
             if state.counter == 1 {

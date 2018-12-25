@@ -9,5 +9,7 @@
 import Foundation
 
 public protocol ArrayReducer {
+    
     func reduce(action: Action, state: [State]) -> [State]
+    
 }

@@ -2,7 +2,7 @@
 
 [![Carthage](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Token is a unidirectional data flow framework for Swift!
+Token is a unidirectional data flow framework for Swift
 
 - [Installation](#installation)
 - [License](#license)
