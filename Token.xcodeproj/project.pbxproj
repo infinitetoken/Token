@@ -112,6 +112,9 @@
 		F0DE1E0E21D1825F001D1FB5 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE1E0D21D1825F001D1FB5 /* TestError.swift */; };
 		F0DE1E0F21D1825F001D1FB5 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE1E0D21D1825F001D1FB5 /* TestError.swift */; };
 		F0DE1E1021D1825F001D1FB5 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DE1E0D21D1825F001D1FB5 /* TestError.swift */; };
+		F0F4DDBE21D8208000F800A5 /* TestSubscriberWithoutOnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F4DDBD21D8208000F800A5 /* TestSubscriberWithoutOnChange.swift */; };
+		F0F4DDBF21D8208000F800A5 /* TestSubscriberWithoutOnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F4DDBD21D8208000F800A5 /* TestSubscriberWithoutOnChange.swift */; };
+		F0F4DDC021D8208000F800A5 /* TestSubscriberWithoutOnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F4DDBD21D8208000F800A5 /* TestSubscriberWithoutOnChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +191,7 @@
 		F0A3DEAC208888C800061A5E /* ArrayCacheableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCacheableTests.swift; sourceTree = "<group>"; };
 		F0DE1E0921D1727E001D1FB5 /* TestWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWidget.swift; sourceTree = "<group>"; };
 		F0DE1E0D21D1825F001D1FB5 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		F0F4DDBD21D8208000F800A5 /* TestSubscriberWithoutOnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubscriberWithoutOnChange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,12 +248,13 @@
 			children = (
 				F011744B1FB4123300310E98 /* TestAction.swift */,
 				F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */,
+				F0DE1E0D21D1825F001D1FB5 /* TestError.swift */,
 				F015F3A51FB4E44100E4DE00 /* TestMiddlewareActionChange.swift */,
 				F01174481FB4118400310E98 /* TestReducer.swift */,
 				F01174451FB4115B00310E98 /* TestState.swift */,
 				F011744E1FB4126C00310E98 /* TestSubscriber.swift */,
+				F0F4DDBD21D8208000F800A5 /* TestSubscriberWithoutOnChange.swift */,
 				F0DE1E0921D1727E001D1FB5 /* TestWidget.swift */,
-				F0DE1E0D21D1825F001D1FB5 /* TestError.swift */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -728,6 +733,7 @@
 				F01EA1142101CA360040FA96 /* CacheTests.swift in Sources */,
 				F01EA1132101CA320040FA96 /* TokenTests.swift in Sources */,
 				F01EA1162101CA360040FA96 /* CacheReducerTests.swift in Sources */,
+				F0F4DDC021D8208000F800A5 /* TestSubscriberWithoutOnChange.swift in Sources */,
 				F01EA11E2101CA420040FA96 /* TestSubscriber.swift in Sources */,
 				F01EA11C2101CA420040FA96 /* TestReducer.swift in Sources */,
 				F01EA1202101CA420040FA96 /* TestMiddlewareActionChange.swift in Sources */,
@@ -775,6 +781,7 @@
 				F011744C1FB4123300310E98 /* TestAction.swift in Sources */,
 				F0A3DEAD208888C800061A5E /* ArrayCacheableTests.swift in Sources */,
 				F011744F1FB4126C00310E98 /* TestSubscriber.swift in Sources */,
+				F0F4DDBE21D8208000F800A5 /* TestSubscriberWithoutOnChange.swift in Sources */,
 				F0A3DEA4208888A600061A5E /* CacheActionTests.swift in Sources */,
 				F0A3DEA7208888B000061A5E /* CacheReducerTests.swift in Sources */,
 				F0A3DE9C208887A500061A5E /* IndexSetInsertingTests.swift in Sources */,
@@ -822,6 +829,7 @@
 				F011744D1FB4123300310E98 /* TestAction.swift in Sources */,
 				F0A3DEAE208888C800061A5E /* ArrayCacheableTests.swift in Sources */,
 				F01174501FB4126C00310E98 /* TestSubscriber.swift in Sources */,
+				F0F4DDBF21D8208000F800A5 /* TestSubscriberWithoutOnChange.swift in Sources */,
 				F0A3DEA5208888A600061A5E /* CacheActionTests.swift in Sources */,
 				F0A3DEA8208888B000061A5E /* CacheReducerTests.swift in Sources */,
 				F0A3DE9D208887A500061A5E /* IndexSetInsertingTests.swift in Sources */,

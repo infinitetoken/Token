@@ -24,4 +24,6 @@ public extension Subscriber {
     public func subscribe(token: Token = Token.shared) { token.subscribe(subscriber: self) }
     public func unsubscribe(token: Token = Token.shared) { token.unsubscribe(subscriber: self) }
     
+    func onChange(newState: State?, action: Action) {}
+    
 }

@@ -196,4 +196,12 @@ class TokenTests: XCTestCase {
         XCTAssertEqual(newState.counter, 0)
     }
     
+    func testSubscriberHasOptionalOnChangeFunction() {
+        let subscriber = TestSubscriberWithoutOnChange()
+        subscriber.subscribe(token: self.token)
+        subscriber.dispatch(TestAction.increase(amount: 1), token: self.token)
+        
+        XCTAssertNotNil(subscriber)
+    }
+    
 }
