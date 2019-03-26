@@ -10,7 +10,7 @@ import Foundation
 
 public extension State {
     
-    public func mutated(_ morphism: (inout Self) -> ()) -> Self {
+    func mutated(_ morphism: (inout Self) -> ()) -> Self {
         var result = self
         morphism(&result)
         return result
