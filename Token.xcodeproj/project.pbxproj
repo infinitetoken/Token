@@ -187,7 +187,7 @@
 		F03992BB1FB3BF7100A76CB7 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
 		F03992C11FB3C0E200A76CB7 /* ActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCreator.swift; sourceTree = "<group>"; };
 		F058C29D22A71324002FCEA1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
-		F058C2A522A7133B002FCEA1 /* TokenWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TokenWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F058C2A522A7133B002FCEA1 /* Token.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Token.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A3DE7D208883AD00061A5E /* CacheReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheReducer.swift; sourceTree = "<group>"; };
 		F0A3DE7E208883AD00061A5E /* CacheAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheAction.swift; sourceTree = "<group>"; };
 		F0A3DE7F208883AD00061A5E /* Array+Cacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Cacheable.swift"; sourceTree = "<group>"; };
@@ -298,7 +298,7 @@
 				F03992961FB3BB4700A76CB7 /* TokenMobileTests.xctest */,
 				F01EA0FB2101CA0F0040FA96 /* Token.framework */,
 				F01EA1032101CA100040FA96 /* TokenTVTests.xctest */,
-				F058C2A522A7133B002FCEA1 /* TokenWatch.framework */,
+				F058C2A522A7133B002FCEA1 /* Token.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -565,7 +565,7 @@
 			);
 			name = TokenWatch;
 			productName = TokenWatch;
-			productReference = F058C2A522A7133B002FCEA1 /* TokenWatch.framework */;
+			productReference = F058C2A522A7133B002FCEA1 /* Token.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1267,7 +1267,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenWatch;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Token;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1293,7 +1293,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenWatch;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Token;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
