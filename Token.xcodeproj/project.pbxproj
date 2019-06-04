@@ -77,6 +77,23 @@
 		F058C29E22A7132A002FCEA1 /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = F03992721FB3BB1700A76CB7 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F058C29F22A7132B002FCEA1 /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = F03992721FB3BB1700A76CB7 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F058C2AD22A71347002FCEA1 /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = F03992721FB3BB1700A76CB7 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F058C2C422A718A7002FCEA1 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011743B1FB3F9A000310E98 /* Token.swift */; };
+		F058C2C522A718AB002FCEA1 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992B51FB3BDC700A76CB7 /* Action.swift */; };
+		F058C2C622A718AB002FCEA1 /* ActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992C11FB3C0E200A76CB7 /* ActionCreator.swift */; };
+		F058C2C722A718AB002FCEA1 /* ArrayReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022EAD61FF35EA800EBB153 /* ArrayReducer.swift */; };
+		F058C2C822A718AB002FCEA1 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE92208883D300061A5E /* Cacheable.swift */; };
+		F058C2C922A718AB002FCEA1 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992B81FB3BE7900A76CB7 /* Middleware.swift */; };
+		F058C2CA22A718AB002FCEA1 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992AF1FB3BD6900A76CB7 /* Reducer.swift */; };
+		F058C2CB22A718AB002FCEA1 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992B21FB3BD8500A76CB7 /* State.swift */; };
+		F058C2CC22A718AB002FCEA1 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992AC1FB3BD3300A76CB7 /* Store.swift */; };
+		F058C2CD22A718AB002FCEA1 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992BB1FB3BF7100A76CB7 /* Subscriber.swift */; };
+		F058C2CE22A718B0002FCEA1 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE83208883AE00061A5E /* Cache.swift */; };
+		F058C2CF22A718B0002FCEA1 /* CacheAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7E208883AD00061A5E /* CacheAction.swift */; };
+		F058C2D022A718B0002FCEA1 /* CacheReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7D208883AD00061A5E /* CacheReducer.swift */; };
+		F058C2D122A718B4002FCEA1 /* State+Mutated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE81208883AE00061A5E /* State+Mutated.swift */; };
+		F058C2D222A718B4002FCEA1 /* IndexSet+Inserting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE952088855500061A5E /* IndexSet+Inserting.swift */; };
+		F058C2D322A718B4002FCEA1 /* Array+Appending.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE82208883AE00061A5E /* Array+Appending.swift */; };
+		F058C2D422A718B4002FCEA1 /* Array+Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7F208883AD00061A5E /* Array+Cacheable.swift */; };
 		F0A3DE84208883AE00061A5E /* CacheReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7D208883AD00061A5E /* CacheReducer.swift */; };
 		F0A3DE85208883AE00061A5E /* CacheReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7D208883AD00061A5E /* CacheReducer.swift */; };
 		F0A3DE86208883AE00061A5E /* CacheAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7E208883AD00061A5E /* CacheAction.swift */; };
@@ -822,6 +839,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F058C2D422A718B4002FCEA1 /* Array+Cacheable.swift in Sources */,
+				F058C2D322A718B4002FCEA1 /* Array+Appending.swift in Sources */,
+				F058C2C622A718AB002FCEA1 /* ActionCreator.swift in Sources */,
+				F058C2D022A718B0002FCEA1 /* CacheReducer.swift in Sources */,
+				F058C2C422A718A7002FCEA1 /* Token.swift in Sources */,
+				F058C2C722A718AB002FCEA1 /* ArrayReducer.swift in Sources */,
+				F058C2D122A718B4002FCEA1 /* State+Mutated.swift in Sources */,
+				F058C2CC22A718AB002FCEA1 /* Store.swift in Sources */,
+				F058C2CE22A718B0002FCEA1 /* Cache.swift in Sources */,
+				F058C2C922A718AB002FCEA1 /* Middleware.swift in Sources */,
+				F058C2D222A718B4002FCEA1 /* IndexSet+Inserting.swift in Sources */,
+				F058C2CA22A718AB002FCEA1 /* Reducer.swift in Sources */,
+				F058C2C522A718AB002FCEA1 /* Action.swift in Sources */,
+				F058C2CD22A718AB002FCEA1 /* Subscriber.swift in Sources */,
+				F058C2C822A718AB002FCEA1 /* Cacheable.swift in Sources */,
+				F058C2CF22A718B0002FCEA1 /* CacheAction.swift in Sources */,
+				F058C2CB22A718AB002FCEA1 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1218,7 +1252,7 @@
 		F058C2AB22A7133C002FCEA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -1245,7 +1279,7 @@
 		F058C2AC22A7133C002FCEA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
