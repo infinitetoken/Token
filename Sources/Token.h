@@ -6,7 +6,7 @@
 //  Copyright © 2017 Aaron Wright. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 
 //! Project version number for Token.
 FOUNDATION_EXPORT double TokenVersionNumber;

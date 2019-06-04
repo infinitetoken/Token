@@ -24,7 +24,6 @@
 		F015F3A91FB4E53A00E4DE00 /* TestActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */; };
 		F015F3AA1FB4E53A00E4DE00 /* TestActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */; };
 		F01EA1042101CA100040FA96 /* Token.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01EA0FB2101CA0F0040FA96 /* Token.framework */; };
-		F01EA10B2101CA100040FA96 /* TokenTV.h in Headers */ = {isa = PBXBuildFile; fileRef = F01EA0FD2101CA0F0040FA96 /* TokenTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F01EA1132101CA320040FA96 /* TokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01174411FB410F600310E98 /* TokenTests.swift */; };
 		F01EA1142101CA360040FA96 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DEA02088889C00061A5E /* CacheTests.swift */; };
 		F01EA1152101CA360040FA96 /* CacheActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DEA3208888A600061A5E /* CacheActionTests.swift */; };
@@ -61,7 +60,6 @@
 		F03992791FB3BB1800A76CB7 /* Token.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F039926F1FB3BB1700A76CB7 /* Token.framework */; };
 		F03992801FB3BB1800A76CB7 /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = F03992721FB3BB1700A76CB7 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F03992971FB3BB4700A76CB7 /* Token.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F039928E1FB3BB4700A76CB7 /* Token.framework */; };
-		F039929E1FB3BB4700A76CB7 /* TokenMobile.h in Headers */ = {isa = PBXBuildFile; fileRef = F03992901FB3BB4700A76CB7 /* TokenMobile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F03992AD1FB3BD3300A76CB7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992AC1FB3BD3300A76CB7 /* Store.swift */; };
 		F03992AE1FB3BD3300A76CB7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992AC1FB3BD3300A76CB7 /* Store.swift */; };
 		F03992B01FB3BD6900A76CB7 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992AF1FB3BD6900A76CB7 /* Reducer.swift */; };
@@ -76,6 +74,9 @@
 		F03992BD1FB3BF7100A76CB7 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992BB1FB3BF7100A76CB7 /* Subscriber.swift */; };
 		F03992C21FB3C0E200A76CB7 /* ActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992C11FB3C0E200A76CB7 /* ActionCreator.swift */; };
 		F03992C31FB3C0E200A76CB7 /* ActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03992C11FB3C0E200A76CB7 /* ActionCreator.swift */; };
+		F058C29E22A7132A002FCEA1 /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = F03992721FB3BB1700A76CB7 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F058C29F22A7132B002FCEA1 /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = F03992721FB3BB1700A76CB7 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F058C2AD22A71347002FCEA1 /* Token.h in Headers */ = {isa = PBXBuildFile; fileRef = F03992721FB3BB1700A76CB7 /* Token.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0A3DE84208883AE00061A5E /* CacheReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7D208883AD00061A5E /* CacheReducer.swift */; };
 		F0A3DE85208883AE00061A5E /* CacheReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7D208883AD00061A5E /* CacheReducer.swift */; };
 		F0A3DE86208883AE00061A5E /* CacheAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A3DE7E208883AD00061A5E /* CacheAction.swift */; };
@@ -151,10 +152,7 @@
 		F015F3A51FB4E44100E4DE00 /* TestMiddlewareActionChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMiddlewareActionChange.swift; sourceTree = "<group>"; };
 		F015F3A81FB4E53A00E4DE00 /* TestActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestActionCreator.swift; sourceTree = "<group>"; };
 		F01EA0FB2101CA0F0040FA96 /* Token.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Token.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F01EA0FD2101CA0F0040FA96 /* TokenTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokenTV.h; sourceTree = "<group>"; };
-		F01EA0FE2101CA0F0040FA96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01EA1032101CA100040FA96 /* TokenTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F01EA10A2101CA100040FA96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F022EAD61FF35EA800EBB153 /* ArrayReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayReducer.swift; sourceTree = "<group>"; };
 		F039926F1FB3BB1700A76CB7 /* Token.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Token.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03992721FB3BB1700A76CB7 /* Token.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
@@ -162,10 +160,7 @@
 		F03992781FB3BB1800A76CB7 /* TokenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F039927F1FB3BB1800A76CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F039928E1FB3BB4700A76CB7 /* Token.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Token.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F03992901FB3BB4700A76CB7 /* TokenMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokenMobile.h; sourceTree = "<group>"; };
-		F03992911FB3BB4700A76CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F03992961FB3BB4700A76CB7 /* TokenMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F039929D1FB3BB4700A76CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F03992AA1FB3BC7900A76CB7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F03992AC1FB3BD3300A76CB7 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F03992AF1FB3BD6900A76CB7 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
@@ -174,6 +169,8 @@
 		F03992B81FB3BE7900A76CB7 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		F03992BB1FB3BF7100A76CB7 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
 		F03992C11FB3C0E200A76CB7 /* ActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCreator.swift; sourceTree = "<group>"; };
+		F058C29D22A71324002FCEA1 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+		F058C2A522A7133B002FCEA1 /* TokenWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TokenWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A3DE7D208883AD00061A5E /* CacheReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheReducer.swift; sourceTree = "<group>"; };
 		F0A3DE7E208883AD00061A5E /* CacheAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheAction.swift; sourceTree = "<group>"; };
 		F0A3DE7F208883AD00061A5E /* Array+Cacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Cacheable.swift"; sourceTree = "<group>"; };
@@ -240,6 +237,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F058C2A222A7133B002FCEA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -259,42 +263,11 @@
 			name = Fixtures;
 			sourceTree = "<group>";
 		};
-		F01EA0FC2101CA0F0040FA96 /* TokenTV */ = {
-			isa = PBXGroup;
-			children = (
-				F01EA1122101CA190040FA96 /* Supporting Files */,
-			);
-			path = TokenTV;
-			sourceTree = "<group>";
-		};
-		F01EA1072101CA100040FA96 /* TokenTVTests */ = {
-			isa = PBXGroup;
-			children = (
-				F01EA10A2101CA100040FA96 /* Info.plist */,
-			);
-			path = TokenTVTests;
-			sourceTree = "<group>";
-		};
-		F01EA1122101CA190040FA96 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F01EA0FD2101CA0F0040FA96 /* TokenTV.h */,
-				F01EA0FE2101CA0F0040FA96 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		F03992651FB3BB1700A76CB7 = {
 			isa = PBXGroup;
 			children = (
-				F03992A51FB3BB6100A76CB7 /* TokenShared */,
-				F03992711FB3BB1700A76CB7 /* Token */,
-				F039928F1FB3BB4700A76CB7 /* TokenMobile */,
-				F01EA0FC2101CA0F0040FA96 /* TokenTV */,
-				F03992A61FB3BB7E00A76CB7 /* TokenTestsShared */,
-				F039927C1FB3BB1800A76CB7 /* TokenTests */,
-				F039929A1FB3BB4700A76CB7 /* TokenMobileTests */,
-				F01EA1072101CA100040FA96 /* TokenTVTests */,
+				F03992A51FB3BB6100A76CB7 /* Sources */,
+				F03992A61FB3BB7E00A76CB7 /* Tests */,
 				F03992701FB3BB1700A76CB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -308,43 +281,12 @@
 				F03992961FB3BB4700A76CB7 /* TokenMobileTests.xctest */,
 				F01EA0FB2101CA0F0040FA96 /* Token.framework */,
 				F01EA1032101CA100040FA96 /* TokenTVTests.xctest */,
+				F058C2A522A7133B002FCEA1 /* TokenWatch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F03992711FB3BB1700A76CB7 /* Token */ = {
-			isa = PBXGroup;
-			children = (
-				F03992A71FB3BC0D00A76CB7 /* Supporting Files */,
-			);
-			path = Token;
-			sourceTree = "<group>";
-		};
-		F039927C1FB3BB1800A76CB7 /* TokenTests */ = {
-			isa = PBXGroup;
-			children = (
-				F039927F1FB3BB1800A76CB7 /* Info.plist */,
-			);
-			path = TokenTests;
-			sourceTree = "<group>";
-		};
-		F039928F1FB3BB4700A76CB7 /* TokenMobile */ = {
-			isa = PBXGroup;
-			children = (
-				F03992A81FB3BC1A00A76CB7 /* Supporting Files */,
-			);
-			path = TokenMobile;
-			sourceTree = "<group>";
-		};
-		F039929A1FB3BB4700A76CB7 /* TokenMobileTests */ = {
-			isa = PBXGroup;
-			children = (
-				F039929D1FB3BB4700A76CB7 /* Info.plist */,
-			);
-			path = TokenMobileTests;
-			sourceTree = "<group>";
-		};
-		F03992A51FB3BB6100A76CB7 /* TokenShared */ = {
+		F03992A51FB3BB6100A76CB7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				F011743B1FB3F9A000310E98 /* Token.swift */,
@@ -353,41 +295,27 @@
 				F0A3DE7C2088833900061A5E /* Extensions */,
 				F03992A91FB3BC4F00A76CB7 /* Supporting Files */,
 			);
-			path = TokenShared;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		F03992A61FB3BB7E00A76CB7 /* TokenTestsShared */ = {
+		F03992A61FB3BB7E00A76CB7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				F01174411FB410F600310E98 /* TokenTests.swift */,
 				F0A3DE992088873C00061A5E /* Cache */,
 				F0A3DE98208886FA00061A5E /* Extensions */,
 				F01174441FB4114300310E98 /* Fixtures */,
+				F058C2AE22A713B6002FCEA1 /* Supporting Files */,
 			);
-			path = TokenTestsShared;
-			sourceTree = "<group>";
-		};
-		F03992A71FB3BC0D00A76CB7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F03992721FB3BB1700A76CB7 /* Token.h */,
-				F03992731FB3BB1700A76CB7 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F03992A81FB3BC1A00A76CB7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F03992901FB3BB4700A76CB7 /* TokenMobile.h */,
-				F03992911FB3BB4700A76CB7 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		F03992A91FB3BC4F00A76CB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F03992721FB3BB1700A76CB7 /* Token.h */,
+				F03992731FB3BB1700A76CB7 /* Info.plist */,
+				F058C29D22A71324002FCEA1 /* Package.swift */,
 				F03992AA1FB3BC7900A76CB7 /* README.md */,
 			);
 			name = "Supporting Files";
@@ -407,6 +335,14 @@
 				F03992BB1FB3BF7100A76CB7 /* Subscriber.swift */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		F058C2AE22A713B6002FCEA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F039927F1FB3BB1800A76CB7 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F0A3DE7C2088833900061A5E /* Extensions */ = {
@@ -458,7 +394,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01EA10B2101CA100040FA96 /* TokenTV.h in Headers */,
+				F058C29F22A7132B002FCEA1 /* Token.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +410,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F039929E1FB3BB4700A76CB7 /* TokenMobile.h in Headers */,
+				F058C29E22A7132A002FCEA1 /* Token.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F058C2A022A7133B002FCEA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F058C2AD22A71347002FCEA1 /* Token.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +533,24 @@
 			productReference = F03992961FB3BB4700A76CB7 /* TokenMobileTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F058C2A422A7133B002FCEA1 /* TokenWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F058C2AA22A7133C002FCEA1 /* Build configuration list for PBXNativeTarget "TokenWatch" */;
+			buildPhases = (
+				F058C2A022A7133B002FCEA1 /* Headers */,
+				F058C2A122A7133B002FCEA1 /* Sources */,
+				F058C2A222A7133B002FCEA1 /* Frameworks */,
+				F058C2A322A7133B002FCEA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokenWatch;
+			productName = TokenWatch;
+			productReference = F058C2A522A7133B002FCEA1 /* TokenWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -629,6 +591,10 @@
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
+					F058C2A422A7133B002FCEA1 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = F03992691FB3BB1700A76CB7 /* Build configuration list for PBXProject "Token" */;
@@ -650,6 +616,7 @@
 				F03992951FB3BB4700A76CB7 /* TokenMobileTests */,
 				F01EA0FA2101CA0F0040FA96 /* TokenTV */,
 				F01EA1022101CA100040FA96 /* TokenTVTests */,
+				F058C2A422A7133B002FCEA1 /* TokenWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -691,6 +658,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F03992941FB3BB4700A76CB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F058C2A322A7133B002FCEA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -844,6 +818,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F058C2A122A7133B002FCEA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -876,7 +857,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TokenTV/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenTV;
@@ -899,7 +880,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TokenTV/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenTV;
@@ -920,7 +901,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
-				INFOPLIST_FILE = TokenTVTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenTVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -939,7 +920,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
-				INFOPLIST_FILE = TokenTVTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenTVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1002,8 +983,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -1059,8 +1040,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1082,7 +1063,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Token/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.Token;
@@ -1106,7 +1087,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Token/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.Token;
@@ -1124,7 +1105,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
-				INFOPLIST_FILE = TokenTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1141,7 +1122,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
-				INFOPLIST_FILE = TokenTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1161,7 +1142,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TokenMobile/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenMobile;
@@ -1186,7 +1167,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TokenMobile/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenMobile;
@@ -1206,7 +1187,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
-				INFOPLIST_FILE = TokenMobileTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenMobileTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1223,7 +1204,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6J8NCZC8G6;
-				INFOPLIST_FILE = TokenMobileTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenMobileTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1231,6 +1212,60 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F058C2AB22A7133C002FCEA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenWatch;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		F058C2AC22A7133C002FCEA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6J8NCZC8G6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.infinitetoken.TokenWatch;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -1296,6 +1331,15 @@
 			buildConfigurations = (
 				F03992A31FB3BB4700A76CB7 /* Debug */,
 				F03992A41FB3BB4700A76CB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F058C2AA22A7133C002FCEA1 /* Build configuration list for PBXNativeTarget "TokenWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F058C2AB22A7133C002FCEA1 /* Debug */,
+				F058C2AC22A7133C002FCEA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
