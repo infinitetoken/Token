@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.1
 //
 //  Package.swift
 //  Lumber
@@ -30,7 +30,6 @@ let package = Package(
             name: "TokenTests",
             dependencies: ["Token"],
             path: "Tests"),
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )
 
