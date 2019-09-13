@@ -158,24 +158,17 @@ class TokenTests: XCTestCase {
         let token = Token()
         let subscriber = TestSubscriber()
         
-        subscriber.subscribe(token: token)
+        token.subscribe(subscriber: subscriber)
         
         XCTAssertEqual(token.subscribers.count, 1)
         
-        subscriber.unsubscribe(token: token)
+        token.unsubscribe(subscriber: subscriber)
         
         XCTAssertEqual(token.subscribers.count, 0)
     }
     
-    func testSubscriberCanGetSharedToken() {
-        let subscriber = TestSubscriber()
-        let token = subscriber.token
-        
-        XCTAssertNotNil(token)
-    }
-    
     func testSubscriberCanDispatchAction() {
-        self.subscriber.dispatch(TestAction.increase(amount: 1), token: self.token)
+        self.token.dispatch(action: TestAction.increase(amount: 1))
         
         guard let newState = self.token.state as? TestState else {
             XCTFail()
@@ -186,7 +179,7 @@ class TokenTests: XCTestCase {
     }
     
     func testSubscriberCanDispatchActionCreator() {
-        self.subscriber.dispatch(TestActionCreator(), token: self.token)
+        self.token.dispatch(actionCreator: TestActionCreator())
         
         guard let newState = self.token.state as? TestState else {
             XCTFail()
@@ -198,8 +191,8 @@ class TokenTests: XCTestCase {
     
     func testSubscriberHasOptionalOnChangeFunction() {
         let subscriber = TestSubscriberWithoutOnChange()
-        subscriber.subscribe(token: self.token)
-        subscriber.dispatch(TestAction.increase(amount: 1), token: self.token)
+        token.subscribe(subscriber: subscriber)
+        token.dispatch(action: TestAction.increase(amount: 1))
         
         XCTAssertNotNil(subscriber)
     }

@@ -10,8 +10,6 @@ import Foundation
 
 public class Token: Store {
     
-    public static let shared = Token()
-    
     public var reducer: Reducer?
     public var state: State?
     public var middleware: [Middleware] = []
