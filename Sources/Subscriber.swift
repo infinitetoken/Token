@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol Subscriber: class {
+public protocol Subscriber: AnyObject {
     
     func onChange(newState: State?, action: Action) -> Void
     
